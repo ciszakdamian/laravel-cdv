@@ -78,4 +78,4 @@ Route::redirect('admin/{name}', '/admin/home/{name}');
 
 Route::get('/user/{name}/{nazwisko}/{age?}', function(String $name, String $nazwisko, int $age = null){
    echo "test";
-})->where(['name' => '[a-z]+'],['name' => '[a-z]+'],['age' => '(\d)'] );
+})->where(['name' => '[a-zAZ]{2,}'],['name' => '[a-zAZ]{2,}'],['age' => '[0-9]{1,3}'] );
