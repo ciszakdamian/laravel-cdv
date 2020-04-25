@@ -20,5 +20,6 @@ Route::get('/', function () {
 Route::get('/cdv', function() {
 	//return view('cdv');
 	//return 'cdv';
-	return ['name' => 'cdv', 'base' => 'classic'];
+	//return ['name' => 'cdv', 'base' => 'classic'];
+    return view('cdv', ['name' => 'Janusz', 'surname' => 'Nowak', 'city' => 'Poznań']);
 });
