@@ -26,7 +26,13 @@ Route::get('/cdv', function() {
 
 Route::get('/pages/{x}', function($x) {
     $pages = [
-      'about' => 'Strona CDV'
+        'about' => 'Strona CDV',
+        'contact' => 'bok@cdv.pl',
+        'home' => 'Strona domowa'
     ];
     return $pages[$x];
 });
+
+//Route::get('/pages/{x}', function($x) {
+//
+//});
