@@ -57,4 +57,6 @@ Route::get('/address/{city?}/{street?}/{zipCode?}', function(String $city ="brak
         Kod: $zipcode 
         <hr>
 ADDRESS;
-});
+})->name('address');
+
+Route::redirect('adres', '/address');
