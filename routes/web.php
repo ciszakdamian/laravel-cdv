@@ -74,4 +74,4 @@ Route::prefix('admin')->group(function (){
 
 });
 
-Route::redirect('admin/{name}', '/admin/home/{name)');
+Route::redirect('admin/{name}', '/admin/home/{name}');
