@@ -23,3 +23,10 @@ Route::get('/cdv', function() {
 	//return ['name' => 'cdv', 'base' => 'classic'];
     return view('cdv', ['name' => 'Janusz', 'surname' => 'Nowak', 'city' => 'Poznań']);
 });
+
+Route::get('/pages/{x}', function($x) {
+    $pages = [
+      'about' => 'Strona CDV'
+    ];
+    return $pages[$x];
+});
