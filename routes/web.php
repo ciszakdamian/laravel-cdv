@@ -33,6 +33,6 @@ Route::get('/pages/{x}', function($x) {
     return $pages[$x];
 });
 
-//Route::get('/pages/{x}', function($x) {
-//
-//});
+Route::get('/address/{city}', function(String $city) {
+    echo "Miasto: ", $city;
+});
