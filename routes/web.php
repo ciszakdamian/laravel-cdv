@@ -59,6 +59,7 @@ Route::get('/address/{city?}/{street?}/{zipCode?}', function(String $city ="brak
 ADDRESS;
 })->name('address');
 
+//http://host/admin/home/Ann
 Route::redirect('adres/{city?}/{street?}/{zipcode?}', '/address/{{city?}/{street?}/{zipcode?}');
 
 Route::prefix('admin')->group(function (){
@@ -72,3 +73,5 @@ Route::prefix('admin')->group(function (){
     });
 
 });
+
+Route::redirect('admin/{name}', '/admin/home/{name)');
