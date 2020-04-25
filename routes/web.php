@@ -60,3 +60,15 @@ ADDRESS;
 })->name('address');
 
 Route::redirect('adres/{city?}/{street?}/{zipcode?}', '/address/{{city?}/{street?}/{zipcode?}');
+
+Route::prefix('admin')->group(function (){
+
+    Route::get('/home/{name}', function(String $name){
+        echo "Witaj $name na stronie administracyjnej";
+    });
+
+    Route::get('users', function(){
+        echo "<h3>Uzytkownicy systemu</h3>";
+    });
+
+});
