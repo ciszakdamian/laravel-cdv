@@ -40,7 +40,7 @@ Route::get('/address/{city}', function(String $city) {
 Route::get('/address/{city}{street}', function(String $city, String $street) {
     echo <<<ADDRESS
         Miasto: $city<br>
-        Ulica: $street<br>
+        Ulica: $street
         <hr>
 ADDRESS;
 
