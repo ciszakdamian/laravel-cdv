@@ -37,11 +37,19 @@ Route::get('/address/{city}', function(String $city) {
     echo "Miasto: ", $city;
 });
 
-Route::get('/address/{city}{street}', function(String $city, String $street) {
+Route::get('/address/{city}/{street}', function(String $city, String $street) {
     echo <<<ADDRESS
         Miasto: $city<br>
         Ulica: $street
         <hr>
 ADDRESS;
+});
 
+Route::get('/address/{city}/{street}/{zipCode}', function(String $city, String $street, Int $zipcode) {
+    echo <<<ADDRESS
+        Miasto: $city<br>
+        Ulica: $street
+        Kod: $zipcode
+        <hr>
+ADDRESS;
 });
