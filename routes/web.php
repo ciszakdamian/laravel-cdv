@@ -45,11 +45,16 @@ Route::get('/address/{city}/{street}', function(String $city, String $street) {
 ADDRESS;
 });
 
-Route::get('/address/{city}/{street}/{zipCode}', function(String $city, String $street, Int $zipcode) {
+Route::get('/address/{city?}/{street?}/{zipCode?}', function(String $city ="brak danych", String $street = "brak danych", Int $zipcode = null) {
+    if (is_null($zipcode)){
+        $zipcode = " brak ";
+    }else{
+        $zipcode = substr($zipcode, 0, 2)."-".substr($zipcode, 3, 4);
+    }
     echo <<<ADDRESS
         Miasto: $city<br>
-        Ulica: $street
-        Kod: $zipcode
+        Ulica: $street <br>
+        Kod: $zipcode 
         <hr>
 ADDRESS;
 });
