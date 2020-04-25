@@ -76,6 +76,6 @@ Route::prefix('admin')->group(function (){
 
 Route::redirect('admin/{name}', '/admin/home/{name}');
 
-Route::get('/user/{name}/{nazwisko}/{age?}', function(String $name, String $nazwisko, int $age = null){
+Route::get('/user/{name}/{surname}/{age?}', function(String $name, String $surname, int $age = null){
    echo "test";
-})->where(['name' => '[a-zAZ]{2,}'],['name' => '[a-zAZ]{2,}'],['age' => '[0-9]{1,3}'] );
+})->where(['name' => '[a-zAZ]{2,}'],['surname' => '[a-zAZ]{2,}'],['age' => '[0-9]{1,3}'] );
