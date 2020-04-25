@@ -82,6 +82,8 @@
             <div class="content">
                 <div class="title m-b-md">
                     Imie: {{ $name }}</br>
+                    Nazwisko: {{ $surname }}</br>
+                    Miasto: {{ $city }}</br>
                 </div>
 
            </div>
