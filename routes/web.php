@@ -87,3 +87,7 @@ Route::get('/cdv1/{city}', function(String $city){
        'city' => $city
     ]);
 });
+
+Route::get('/loop', function (){
+   return view('loop');
+});
