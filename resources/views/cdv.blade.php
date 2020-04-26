@@ -88,6 +88,10 @@
 
                 @if ($city=="Poznań")
                     <p>Mieszkasz w województwie wielkopolskim</p>
+                @elseif($city=="Wrocław")
+                    <p>Mieszkasz województwie dolnośląskim</p>
+                @else@
+                    <p>Mieszkasz w innych miastach niż Poznań i Wrocław</p>
                 @endif
 
            </div>
