@@ -89,5 +89,13 @@ Route::get('/cdv1/{city}', function(String $city){
 });
 
 Route::get('/loop', function (){
-   return view('loop');
+   //return view('loop');
+
+   $car = [
+    ['brand' => 'Ferrari', 'model' => 'F430', 'color' => 'red' ],
+       ['brand' => 'Audi', 'model' => 'A4', 'color' => 'black' ],
+       ['brand' => 'Fiat', 'model' => '126p', 'color' => 'red' ]
+
+   ];
+   return view('loop', ['car' => $car]);
 });

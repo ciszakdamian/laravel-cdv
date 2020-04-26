@@ -61,6 +61,14 @@
         .m-b-md {
             margin-bottom: 30px;
         }
+
+        table, tr, th, td{
+            border: 1px solid red;
+            border-collapse: collapse;
+            text-align: center;
+            padding: 10px;
+        }
+
     </style>
 </head>
 <body>
@@ -81,9 +89,23 @@
 
     <div class="content">
         <div class="title m-b-md">
+            CDV - Samochody
+            <table class="table-dark">
+                <tr>
+                    <th>Marka</th>
+                    <th>Model</th>
+                    <th>Color</th>
+                </tr>
+                <tr>
+                @php
+                 for($i=0;$i<count($car);$i++){
+                        echo "<td>".$car[i]."</td>";
 
-            Cdv - Samochody
+                 }
 
+                @endphp
+                </tr>
+            </table>
         </div>
     </div>
 </div>
