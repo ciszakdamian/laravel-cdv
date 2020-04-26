@@ -94,6 +94,9 @@
                     <p>Mieszkasz w innych miastach niż Poznań i Wrocław</p>
                 @endif
 
+                @unless ($city=="Wrocław")
+                    <p>Twpja lokalizacja jest inna niż Wrocław</p>
+                @endunless
            </div>
         </div>
     </body>
