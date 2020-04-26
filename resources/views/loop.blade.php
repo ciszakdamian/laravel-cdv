@@ -99,7 +99,7 @@
                 <tr>
                 @php
                  for($i=0;$i<count($car);$i++){
-                        print_r($car[$i]);
+                        print($car[$i]);
 
                  }
 
