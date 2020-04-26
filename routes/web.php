@@ -99,3 +99,8 @@ Route::get('/loop', function (){
    ];
    return view('loop', ['car' => $car]);
 });
+
+Route:get('/egzamin', function (){
+
+    return "test"
+})
