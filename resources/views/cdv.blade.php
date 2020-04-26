@@ -99,7 +99,7 @@
                 @endunless
 
                 @php
-                $lenCity = stringlen($city);
+                $lenCity = strlen($city);
                 echo "Miasto $city na $lenCity liter"
                 @endphp
 
