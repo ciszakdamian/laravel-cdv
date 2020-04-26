@@ -80,6 +80,10 @@ Route::get('/user/{name}/{surname}/{age?}', function(String $name, String $surna
    echo "test";
 })->where(['name' => '[a-zAZ]{2,}'],['surname' => '[a-zAZ]{2,}'],['age' => '[0-9]{1,3}'] );
 
-Route::get('/cdv/{city}', function(String $city){
-    return $city;
+Route::get('/cdv1/{city}', function(String $city){
+    return view('cdv', [
+       'name' => 'Janusz',
+       'surname' => 'Nowak',
+       'city' => $city
+    ]);
 });
