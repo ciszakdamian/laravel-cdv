@@ -77,7 +77,6 @@
     @endif
 
     <div class="content">
-        <div class="title m-b-md">
             CDV - formularz
 
             <h1>Informacja o użytkowniku</h1>
@@ -86,7 +85,6 @@
                 <input type="password" name="password"><br><br>
                 <input type="submit" value="Zatwierdż">
             </form>
-        </div>
     </div>
 </div>
 </body>
