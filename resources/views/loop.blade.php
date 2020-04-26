@@ -96,15 +96,19 @@
                     <th>Model</th>
                     <th>Color</th>
                 </tr>
-                <tr>
-                @php
-                 for($i=0;$i<count($car);$i++){
-                        print($car[$i]);
+                 @for($i=0; $i<count($car) ;$i++){
+                        <tr>
+                            <td>
+
+                                {{$car[$i]['brand']}}}
+
+                            </td>
+
+
+                        </tr>
 
                  }
-
-                @endphp
-                </tr>
+                 @endfor
             </table>
         </div>
     </div>
