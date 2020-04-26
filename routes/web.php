@@ -100,7 +100,7 @@ Route::get('/loop', function (){
    return view('loop', ['car' => $car]);
 });
 
-Route:get('/egzamin', function (){
+Route::get('/egzamin', function (){
 
     echo "test";
 });
