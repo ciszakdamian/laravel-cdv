@@ -115,3 +115,5 @@ Route::get('/egzamin', function (){
 Route::get('/site/{cdvsite}', 'CdvSite@index');
 
 Route::get('/drives/{drive}', 'PageController@show');
+
+Route::get('/drives', 'PageController@index');

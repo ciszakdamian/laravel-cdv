@@ -12,6 +12,15 @@ class PageController extends Controller
             'hdd' => 'Dysk HDD',
             'ssd' => 'Dysk SSD'
         ];
-        return $drives[$drive]
+        return $drives[$drive];
     }
+
+    public function index()
+    {
+        $drives = [
+            'hdd' => 'Dysk HDD funkcja index',
+        ];
+        dd($drives);
+    }
+
 }
