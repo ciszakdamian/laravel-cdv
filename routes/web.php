@@ -123,4 +123,5 @@ Route::get('/userform', function(){
   return view('userform');
 });
 
-Route::view('/userform', 'userform');
+Route::view('/userform1', 'userform');
+Route::post('usercontroller', 'userController@account');
