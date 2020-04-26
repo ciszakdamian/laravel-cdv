@@ -125,3 +125,6 @@ Route::get('/userform', function(){
 
 Route::view('/userform1', 'userform');
 Route::post('usercontroller', 'userController@account');
+
+Route::view('/user', 'user');
+Route::post('userController1', 'userController1@index');
