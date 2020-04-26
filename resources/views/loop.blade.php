@@ -99,14 +99,15 @@
                  @for($i=0; $i<count($car) ;$i++){
                         <tr>
                             <td>
-
                                 {{$car[$i]['brand']}}}
-
                             </td>
-
-
+                            <td>
+                                {{$car[$i]['model']}}}
+                            </td>
+                            <td>
+                                {{$car[$i]['color']}}}
+                            </td>
                         </tr>
-
                  }
                  @endfor
             </table>
