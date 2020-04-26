@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 class CdvSite extends Controller
 {
     public function index(){
-        echo "cdvCOntroller";
+        //echo "cdvController";
+        return ['site' => 'cdv.pl', 'city' => 'Poznań'];
     }
 }
