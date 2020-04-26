@@ -81,6 +81,7 @@
 
             <h1>Informacja o użytkowniku</h1>
             <form action="usercontroller" method="post">
+                {{@csrf_field()}}
                 <input type="text" name="email"><br><br>
                 <input type="password" name="password"><br><br>
                 <input type="submit" value="Zatwierdż">
