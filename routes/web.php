@@ -102,5 +102,5 @@ Route::get('/loop', function (){
 
 Route:get('/egzamin', function (){
 
-    return "test"
-})
+    echo "test";
+});
