@@ -99,16 +99,22 @@
                  @for($i=0; $i<count($car) ;$i++)
                         <tr>
                             <td>
-                                {{$car[$i]['brand']}}}
+                                {{$car[$i]['brand']}}
                             </td>
                             <td>
-                                {{$car[$i]['model']}}}
+                                {{$car[$i]['model']}}
                             </td>
                             <td>
-                                {{$car[$i]['color']}}}
+                                {{$car[$i]['color']}}
                             </td>
                         </tr>
                  @endfor
+                @foreach($car as $item)
+                    <div>
+                        Marka: {{ $item['brand'] }}, model {{$item['model']}}, kolor {{$item['color']}}
+                    </div>
+                @endforeach
+
             </table>
         </div>
     </div>
