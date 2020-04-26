@@ -66,7 +66,7 @@
             border: 1px solid red;
             border-collapse: collapse;
             text-align: center;
-            padding: 10px;
+            padding: 1px;
         }
 
     </style>
@@ -111,6 +111,15 @@
                  @endfor
                 @foreach($car as $item)
                     <div>
+
+                        @if ($loop->first)
+                            <span>Pierwszy element tablicy</span>
+                        @endif
+                        @if ($loop->last)
+                                <span>Ostatni element tablicy</span>
+                         @endif
+
+                        {{ $loop=>index }}:
                         Marka: {{ $item['brand'] }}, model {{$item['model']}}, kolor {{$item['color']}}
                     </div>
                 @endforeach
