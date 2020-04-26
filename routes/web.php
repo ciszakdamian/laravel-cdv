@@ -102,8 +102,8 @@ Route::get('/loop', function (){
 
 Route::get('/egzamin', function (){
     $egzamin = [
-        ['Imie' => 'Jan', 'Nazwisko' => 'Nowak', "Przedmiot" => "Matematy", 'Ocena' => '5' ],
-        ['Imie' => 'Zbigniew', 'Nazwisko' => 'Noga', "Przedmiot" => "Matematy", 'Ocena' => '1' ]
+        ['Imie' => 'Jan', 'Nazwisko' => 'Nowak', "Przedmiot" => "Matematyka", 'Ocena' => '5' ],
+        ['Imie' => 'Zbigniew', 'Nazwisko' => 'Noga', "Przedmiot" => "Matematyka", 'Ocena' => '1' ]
     ];
 
     foreach ($egzamin as $i){
