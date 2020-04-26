@@ -111,3 +111,5 @@ Route::get('/egzamin', function (){
     }
 
 });
+
+Route::get('/site', 'CdvSite@index');
