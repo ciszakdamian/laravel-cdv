@@ -58,9 +58,6 @@
             text-transform: uppercase;
         }
 
-        .m-b-md {
-            margin-bottom: 30px;
-        }
     </style>
 </head>
 <body>
@@ -84,7 +81,7 @@
             CDV - formularz
 
             <h1>Informacja o użytkowniku</h1>
-            <form action="" method="post">
+            <form action="usercontroller" method="post">
                 <input type="text" name="email"><br><br>
                 <input type="password" name="password"><br><br>
                 <input type="submit" value="Zatwierdż">
