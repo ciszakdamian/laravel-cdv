@@ -86,6 +86,10 @@
                     Miasto: {{ $city }}</br>
                 </div>
 
+                @if ($city=="Poznań")
+                    <p>Mieszkasz w województwie wielkopolskim</p>
+                @endif
+
            </div>
         </div>
     </body>
