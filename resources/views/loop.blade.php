@@ -119,7 +119,7 @@
                                 <span>Ostatni element tablicy</span>
                          @endif
 
-                        {{ $loop=>index }}:
+                        {{ $loop->index }}:
                         Marka: {{ $item['brand'] }}, model {{$item['model']}}, kolor {{$item['color']}}
                     </div>
                 @endforeach
