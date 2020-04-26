@@ -80,7 +80,7 @@
         CDV - formularz
 
         <h1>Informacja o użytkowniku</h1>
-        <form action="userController1" method="post">
+        <form action="userController" method="post">
             {{@csrf_field()}}
             <input type="text" name="address"><br><br>
             <input type="submit" value="Zatwierdż">
