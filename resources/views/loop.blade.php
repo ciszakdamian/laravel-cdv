@@ -96,7 +96,7 @@
                     <th>Model</th>
                     <th>Color</th>
                 </tr>
-                 @for($i=0; $i<count($car) ;$i++){
+                 @for($i=0; $i<count($car) ;$i++)
                         <tr>
                             <td>
                                 {{$car[$i]['brand']}}}
@@ -108,7 +108,6 @@
                                 {{$car[$i]['color']}}}
                             </td>
                         </tr>
-                 }
                  @endfor
             </table>
         </div>
