@@ -97,6 +97,13 @@
                 @unless ($city=="Wrocław")
                     <p>Twpja lokalizacja jest inna niż Wrocław</p>
                 @endunless
+
+                @php
+                $lenCity = stringlen($city);
+                echo "Miasto $city na $lenCity liter"
+                @endphp
+
+
            </div>
         </div>
     </body>
