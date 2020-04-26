@@ -122,3 +122,5 @@ Route::get('/userform', function(){
 
   return view('userform');
 });
+
+Route::view('/userform', 'userform');
