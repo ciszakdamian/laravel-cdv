@@ -107,7 +107,7 @@ Route::get('/egzamin', function (){
     ];
 
     foreach ($egzamin as $i){
-        echo $i['Imie'];
+        echo $i['Imie']." ".$i['Nazwisko']." ".$i['Ocena']."</br>";
     }
 
 });
