@@ -101,6 +101,13 @@ Route::get('/loop', function (){
 });
 
 Route::get('/egzamin', function (){
+    $egzamin = [
+        ['Imie' => 'Jan', 'Nazwisko' => 'Nowak', 'Ocena' => '5' ],
+        ['Imie' => 'Zbigniew', 'Nazwisko' => 'Noga', 'Ocena' => '1' ]
+    ];
 
-    echo "test";
+    foreach ($egzamin as $i){
+        echo $i['Imie'];
+    }
+
 });
