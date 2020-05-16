@@ -128,3 +128,5 @@ Route::post('usercontroller', 'userController@account');
 
 Route::view('/user', 'user');
 Route::post('userController1', 'userController1@index');
+
+Route::get('data', 'Data@list');
